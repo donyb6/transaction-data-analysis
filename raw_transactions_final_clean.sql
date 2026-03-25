@@ -53,7 +53,7 @@ UPDATE trans_staging
 SET amount = TRIM(amount);
 
 ALTER TABLE trans_staging
-ADD COLUMN amount_clean DECIMAL(10, 2); -- create a new table for amount, this will 
+ADD COLUMN amount_clean DECIMAL(10, 2);
 
 UPDATE trans_staging
 SET amount_clean = 
